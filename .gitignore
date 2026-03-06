@@ -63,7 +63,7 @@ out/
 .vercel/
 .serverless/
 .parcel-cache/
-
+*.mjs
 *.tgz
 *.zip
 
