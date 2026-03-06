@@ -333,7 +333,9 @@ async function checkSecurity() {
 // ─────────────────────────────────────────
 async function runLint(pkg) {
   sec("🔍 ESLint");
-  if(!pkg.scripts?.lint){ log(I.warn,"Sin script de lint"); return; }
+  if(!pkg.scripts?.lint){ log(I.warn,"Sin script de lint"); return; 
+    
+  }
 
   const out=run("npm run lint -- --format compact 2>&1");
   const errors  =(out.match(/: error /g)  ||[]).length;
