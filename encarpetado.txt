@@ -1,0 +1,18 @@
+POSTIM_Back_end/
+├── src/
+│   ├── config/             # Configuración de Cloudinary, DB y variables de entorno
+│   ├── controllers/        # Funciones que reciben la req y envían la res
+│   │   └── mockupController.ts
+│   ├── middleware/         # Validaciones y configuración de Multer (subida de archivos)
+│   │   └── upload.ts
+│   ├── services/           # ¡EL CORAZÓN! Aquí va la lógica de Sharp (procesamiento)
+│   │   └── sharpService.ts
+│   ├── routes/             # Definición de los endpoints
+│   │   └── mockupRoutes.ts
+│   ├── assets/             # Frames de celulares PNG y fondos locales
+│   │   ├── devices/        # iphone-15.png, macbook.png
+│   │   └── backgrounds/    # texturas, gradientes
+│   └── index.ts            # Punto de entrada (Express + Bun)
+├── .env                    # Keys de Cloudinary y Mongo
+├── tsconfig.json
+└── package.json

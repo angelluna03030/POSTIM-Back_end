@@ -1,0 +1,32 @@
+{
+  "name": "postim_back_end",
+  "module": "src/index.ts",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "doctor:mern": "node project-doctor-mern.mjs",
+    "doctor:ts": "node project-doctor-ts.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "9",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.3",
+    "depcheck": "^1.4.7",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cloudinary": "^2.9.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "mongoose": "^9.2.3",
+    "multer": "^2.1.0",
+    "sharp": "^0.34.5"
+  }
+}
